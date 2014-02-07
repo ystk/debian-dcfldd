@@ -1,3 +1,13 @@
+dcfldd (1.3.4.1-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Replaced homepage pseudo header with regular field. Closes: #615447
+  * Updated standards version to 3.9.3
+  * Fixed lintian warnings
+  * Updated outdated autotools helper files. Closes: #533686
+
+ -- Miah Gregory <mace@debian.org>  Sat, 12 May 2012 23:07:38 +0100
+
 dcfldd (1.3.4.1-2) unstable; urgency=low
 
   * closes: #453577

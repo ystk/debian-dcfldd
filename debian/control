@@ -2,12 +2,13 @@ Source: dcfldd
 Section: admin
 Priority: optional
 Maintainer: Kenny Duffus <kenny@duffus.org>
-Build-Depends: debhelper (>= 5.0.0)
-Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev
+Standards-Version: 3.9.3
+Homepage: http://dcfldd.sourceforge.net/
 
 Package: dcfldd
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: enhanced version of dd for forensics and security
  Based on the dd program with the following additional features: 
  .
@@ -26,4 +27,3 @@ Description: enhanced version of dd for forensics and security
   - Piped output and logs, dcfldd can send all its log data and output to
     commands as well as files natively.
  .
- Homepage: http://dcfldd.sourceforge.net/ 
