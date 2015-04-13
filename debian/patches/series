@@ -1,3 +1,5 @@
-fix-typo.patch
-fix-manpage-whatis.patch
+fix-probing-of-large-block-devices.patch
+fix-sizeprobe-option.patch
 fix-implicit-declarations.patch
+fix-typo.patch
+fix-manpage.patch

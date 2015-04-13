@@ -1,3 +1,61 @@
+dcfldd (1.3.4.1-6) unstable; urgency=medium
+
+  * debian/watch: updated to show remote version in the same format
+      of the local version (the minus sign in remote version was
+      changed by a dot).
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Sun, 26 Oct 2014 18:49:58 -0200
+
+dcfldd (1.3.4.1-5) unstable; urgency=medium
+
+  * debian/rules: added missing '--with autotools-dev' to dh target. Thanks
+    a lot to Peter Michael Green <plugwash@debian.org>. (Closes: #764657)
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Fri, 10 Oct 2014 07:31:20 -0300
+
+dcfldd (1.3.4.1-4) unstable; urgency=medium
+
+  * Fixed the author name in these patches:
+      - fix-implicit-declarations.patch;
+      - fix-manpage.patch;
+      - fix-typo.patch.
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Wed, 08 Oct 2014 17:53:56 -0300
+
+dcfldd (1.3.4.1-3) unstable; urgency=medium
+
+  * New maintainer. Thanks to Kenny Duffus, the initial maintainer, for
+      your nice work over this package. (Closes: #763947)
+  * Acknowledge NMU. Thanks to Miah Gregory. (Closes: #533686, #615447)
+  * Migrations:
+      - debian/copyright to 1.0 format.
+      - debhelper level to 9.
+      - debian/rules to new (reduced) format.
+  * debian/control:
+      - Added the Vcs-* fields to control the Debian packaging.
+      - Bumped the Standard-Version to 3.9.6.
+      - Reviewed the long description (little changes).
+  * debian/copyright:
+      - Updated the upstream email address.
+      - Updated the licenses information.
+  * debian/source/options: updated.
+  * debian/patches/:
+      - Added a header to each patch.
+      - Added the patch fix-sizeprobe-option.patch. Thanks to
+        Vangelis Koukis. (Closes: #756881)
+      - Added the patch fix-probing-of-large-block-devices.patch.
+        Thanks to Vangelis Koukis. (Closes: #756882)
+      - fix-manpage-whatis.patch:
+          . Removed the reference to 'info' command.
+          . Renamed to fix-manpage.patch.
+      - Moved the fix to 'seperate' in manpage from fix-typo.patch
+        to fix-manpage.patch.
+  * debian/rules: added the DEB_BUILD_MAINT_OPTIONS variable to fix the
+      issues pointed by blhc.
+  * debian/watch: fixed and improved.
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Sun, 05 Oct 2014 13:15:31 -0300
+
 dcfldd (1.3.4.1-2.1) unstable; urgency=low
 
   * Non-maintainer upload.
@@ -29,4 +87,3 @@ dcfldd (1.3.4-0ubuntu1) dapper; urgency=low
   * Initial release
 
  -- Kenny Duffus <kenny@duffus.org>  Sun,  12 Feb 2006 18:46:07 +0000
-

@@ -1,8 +1,11 @@
-Fixing implicit declaration warnings.
-
---- a/hash.h
-+++ b/hash.h
-@@ -99,6 +99,8 @@
+Description: fixing implicit declaration warnings.
+Author: Miah Gregory <mace@debian.org>
+Last-Update: 2012-05-12
+Index: dcfldd-1.3.4.1/hash.h
+===================================================================
+--- dcfldd-1.3.4.1.orig/hash.h
++++ dcfldd-1.3.4.1/hash.h
+@@ -99,6 +99,8 @@ extern void hash_update(hashlist_t *, vo
  extern void hash_update_buf(hashlist_t *, int, int, void *, size_t);
  extern void hash_remainder(hashlist_t *, int);
  
@@ -11,8 +14,10 @@ Fixing implicit declaration warnings.
  /* inner hashl_* funcitons are for iterating over hashlists */
  extern void hashl_init(hashlist_t *, int);
  extern void hashl_update(hashlist_t *, int, const void *, size_t);
---- a/split.c
-+++ b/split.c
+Index: dcfldd-1.3.4.1/split.c
+===================================================================
+--- dcfldd-1.3.4.1.orig/split.c
++++ dcfldd-1.3.4.1/split.c
 @@ -20,6 +20,9 @@
  
  /* GNU dd originally written by Paul Rubin, David MacKenzie, and Stuart Kemp. */
@@ -23,8 +28,10 @@ Fixing implicit declaration warnings.
  #include "dcfldd.h"
  #include "split.h"
  #include <stdlib.h>
---- a/translate.c
-+++ b/translate.c
+Index: dcfldd-1.3.4.1/translate.c
+===================================================================
+--- dcfldd-1.3.4.1.orig/translate.c
++++ dcfldd-1.3.4.1/translate.c
 @@ -23,6 +23,7 @@
  
  #include "dcfldd.h"
@@ -33,8 +40,10 @@ Fixing implicit declaration warnings.
  
  /* Output representation of newline and space characters.
     They change if we're converting to EBCDIC.  */
---- a/util.c
-+++ b/util.c
+Index: dcfldd-1.3.4.1/util.c
+===================================================================
+--- dcfldd-1.3.4.1.orig/util.c
++++ dcfldd-1.3.4.1/util.c
 @@ -32,6 +32,7 @@
  
  #include "dcfldd.h"
@@ -52,9 +61,11 @@ Fixing implicit declaration warnings.
  
  int buggy_lseek_support(int fdesc)
  {
---- a/util.h
-+++ b/util.h
-@@ -41,7 +41,7 @@
+Index: dcfldd-1.3.4.1/util.h
+===================================================================
+--- dcfldd-1.3.4.1.orig/util.h
++++ dcfldd-1.3.4.1/util.h
+@@ -41,7 +41,7 @@ extern void time_left(char *, size_t, in
  extern int bit_count(register unsigned int);
  extern void replace_escapes(char *);
  extern FILE *popen2(const char *, const char *);

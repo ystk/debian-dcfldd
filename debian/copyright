@@ -1,63 +1,79 @@
-This package was debianized by Kenny Duffus <kenny@duffus.org> on
-Sun, 12 Feb 2006 18:46:07 +0000.
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: dcfldd
+Source: http://dcfldd.sf.net
+Comment: a note from upstream site -- "dcfldd was written by Nicholas Harbour,
+         who at the time was working for the Department of Defense Computer
+         Forensics Lab (DCFL). Although he is no longer affiliated with the
+         DCFL, Nick still maintains the package. The DCFL does not maintain,
+         support, or have any other affiliation with dcfldd."
 
-It was downloaded from http://dcfldd.sourceforge.net/
 
-Author: Nicholas Harbour <nicholasharbour@yahoo.com>
+Files: *
+Copyright: 1985-2006 Free Software Foundation, Inc.
+           2002-2006 Nicholas Harbour <nickharbour@gmail.com>
+License: GPL-2.0+
 
-dcfldd is based on GNU dd written by Paul Rubin, David MacKenzie and
-Stuart Kemp.
 
-Copyright (C) 1985-2006 Free Software Foundation, Inc.
+Files: md5.c md5.h
+Copyright: 1990 RSA Data Security
+License: RSA
 
-License:
 
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation; either version 2 of the License, or
-  (at your option) any later version.
+Files: sha1.c sha1.h
+Copyright: 2001-2003 Allan Saddi <allan@saddi.com>
+License: BSD-2-clause
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this package; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
-  MA 02110-1301, USA.
+Files: sha2.c sha2.h
+Copyright: 2000-2001 Aaron D. Gifford <me@aarongifford.com>
+License: BSD-3-clause
 
-You should have a copy of this license in the file
-/usr/share/common-licenses/GPL on your Debian system.
 
-With the exception of the following:
+Files: debian/*
+Copyright: 2006-2007 Kenny Duffus <kenny@duffus.org>
+           2012      Miah Gregory <mace@debian.org>
+           2014      Joao Eriberto Mota Filho <eriberto@debian.org>
+License: GPL-2.0+
 
-md5.c and md5.h are Copyright (C) 1990, RSA Data Security, Inc under the
-following license:
+License: GPL-2.0+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
+
+License: RSA
   License to copy and use this software is granted provided that
   it is identified as the "RSA Data Security, Inc. MD5 Message
   Digest Algorithm" in all material mentioning or referencing this
   software or this function.
-
+  .
   License is also granted to make and use derivative works
   provided that such works are identified as "derived from the RSA
   Data Security, Inc. MD5 Message Digest Algorithm" in all
   material mentioning or referencing the derived work.
-
+  .
   RSA Data Security, Inc. makes no representations concerning
   either the merchantability of this software or the suitability
   of this software for any particular purpose.  It is provided "as
   is" without express or implied warranty of any kind.
-
+  .
   These notices must be retained in any copies of any part of this
   documentation and/or software.
 
-sha1.c and sha1.h are Copyright (c) 2001-2003 Allan Saddi <allan@saddi.com>
-under the following license:
 
-  All rights reserved.
-
+License: BSD-2-clause
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
   are met:
@@ -66,7 +82,7 @@ under the following license:
   2. Redistributions in binary form must reproduce the above copyright
      notice, this list of conditions and the following disclaimer in the
      documentation and/or other materials provided with the distribution.
-
+  .
   THIS SOFTWARE IS PROVIDED BY ALLAN SADDI AND HIS CONTRIBUTORS ``AS IS''
   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -79,11 +95,8 @@ under the following license:
   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
   POSSIBILITY OF SUCH DAMAGE.
 
-sha2.c and sha2.h are Copyright (c) 2000-2001 Aaron D. Gifford
-<me@aarongifford.com> under the following license:
 
-  All rights reserved.
-
+License: BSD-3-clause
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
   are met:
@@ -95,7 +108,7 @@ sha2.c and sha2.h are Copyright (c) 2000-2001 Aaron D. Gifford
   3. Neither the name of the copyright holder nor the names of contributors
      may be used to endorse or promote products derived from this software
      without specific prior written permission.
-
+ .
  THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTOR(S) ``AS IS'' AND
  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -107,6 +120,3 @@ sha2.c and sha2.h are Copyright (c) 2000-2001 Aaron D. Gifford
  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  SUCH DAMAGE.
-
-The Debian packaging is (C) 2006, Kenny Duffus <kenny@duffus.org> and is
-licensed under the GPL v2 or (at your option) any later version, see above.
